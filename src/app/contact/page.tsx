@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   return (
     <div className="p-8 bg-white rounded-lg shadow-lg text-center">
-      <h2 className="text-3xl font-bold text-gray-800 mb-2">Let's Connect</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mb-2">Let&apos;s Connect</h2>
       <p className="text-gray-600 mb-4">Have a project in mind? Reach out to me!</p>
       
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">

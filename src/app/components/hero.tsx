@@ -35,13 +35,12 @@ const Hero = () => {
         </section>
 
         <div className="flex justify-center md:justify-end">
-          <div className="relative aspect-square w-64 overflow-hidden md:w-80">
+          <div className="w-40 h-40 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
             <Image
               src="/images/anil.jpg"
               alt="Anil Kumar Mahato"
               fill
-              priority
-              className="rounded-full object-cover"
+              className="object-cover"
             />
           </div>
         </div>

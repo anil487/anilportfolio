@@ -37,13 +37,10 @@ const Hero = () => {
         <div className="flex justify-center md:justify-end">
           <div className="w-40 h-40 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
             <Image
-              src="/images/anil.jpg"
+              src="public/images/anil.jpg"
+              width={500}
+              height={300}
               alt="Anil Kumar Mahato"
-              width={192}
-              height={192}
-              priority
-              className="object-cover rounded-full"
-              unoptimized
             />
           </div>
         </div>

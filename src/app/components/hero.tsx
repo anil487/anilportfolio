@@ -40,7 +40,7 @@ const Hero = () => {
               src="/vercel.svg"
               width={500}
               height={300}
-              alt="Anil Kumar Mahato"
+              alt="xxx"
             />
           </div>
         </div>

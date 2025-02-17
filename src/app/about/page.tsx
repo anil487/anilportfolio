@@ -14,7 +14,7 @@ const AboutMe = () => {
     <div className="flex flex-col md:flex-row items-center gap-10 p-8 bg-white rounded-lg shadow-lg">
       <div className="w-40 h-40 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
         <Image
-          src="/anil.jpg"
+          src="/anil_mahato.jpg"
           alt="Anil Kumar Mahato"
           fill
           className="object-cover"

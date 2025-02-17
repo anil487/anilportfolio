@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "anilkumarmahato.com.np",
-        pathname: "/**",
+        pathname: "/portfolio_anil/public/images",
       },
     ],
   },

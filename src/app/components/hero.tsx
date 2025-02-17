@@ -37,10 +37,10 @@ const Hero = () => {
         <div className="flex justify-center md:justify-end">
           <div className="w-40 h-40 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
             <Image
-              src="/vercel.svg"
-              width={500}
-              height={300}
-              alt="xxx"
+              src="/anil.jpg"
+              fill
+              className="object-cover"
+              alt="anil"
             />
           </div>
         </div>

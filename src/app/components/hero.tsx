@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="flex justify-center md:justify-end">
           <div className="w-40 h-40 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
             <Image
-              src="/images/bird.jpg"
+              src="/images/anilmahato.png"
               fill
               className="object-cover"
               alt="anil"

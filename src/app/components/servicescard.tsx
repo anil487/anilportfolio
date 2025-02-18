@@ -10,7 +10,7 @@ interface ServiceCardProps {
 function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
     <div className="bg-background p-6 rounded-xl transition-all hover:shadow-lg hover:-translate-y-1">
-      <div className="w-12 h-12 flex items-center justify-center text-orange-500 bg-orange-100 rounded-full mb-4">
+      <div className="w-12 h-12 flex items-center justify-center text-orange-600 bg-orange-100 rounded-full mb-4">
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>

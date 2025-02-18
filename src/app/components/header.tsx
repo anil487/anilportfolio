@@ -35,7 +35,7 @@ export const Header = () => {
             <a
               key={index}
               href={item.href}
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 hover:underline"
+              className="text-gray-700  font-bold dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 hover:underline"
             >
               {item.label}
             </a>

@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTwitterSquare } from "react-icons/fa";
-import Services from "./servicescard";
+
 
 const Hero = () => {
   return (
@@ -70,7 +70,7 @@ const Hero = () => {
           <span className="sr-only">Twitter</span>
         </Link>
       </div>
-      <Services />
+      
     </div>
   );
 };

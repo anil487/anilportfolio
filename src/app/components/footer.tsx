@@ -9,7 +9,7 @@ const navigationItems = [
   { label: "Home", href: "/" },
   { label: "About Me", href: "/about" },
   { label: "Projects", href: "/projects" },
-  { label: "Testimonials", href: "/testimonials" },
+  
   { label: "Contact", href: "/contact" },
 ]
 

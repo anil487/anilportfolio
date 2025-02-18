@@ -45,23 +45,23 @@ const Hero = () => {
           <div className="flex justify-center gap-4 mt-4">
             <Link
               href="https://www.linkedin.com/in/anil-kr-mahato-029175229/"
-              className="text-violet-500 hover:text-gray-900"
+              className="text-violet-500 hover:text-blue-500"
             >
               <FaLinkedin className="w-6 h-6" />
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
               href="https://github.com/anil487"
-              className="text-violet-500 hover:text-gray-900"
+              className="text-violet-500 hover:text-blue-500"
             >
               <IoLogoGithub className="w-6 h-6" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="#" className="text-violet-500 hover:text-gray-900">
+            <Link href="#" className="text-violet-500 hover:text-blue-500">
               <AiOutlineInstagram className="w-6 h-6" />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="#" className="text-violet-500 hover:text-gray-900">
+            <Link href="#" className="text-violet-500 hover:text-blue-500">
               <FaTwitterSquare className="w-6 h-6" />
               <span className="sr-only">Twitter</span>
             </Link>

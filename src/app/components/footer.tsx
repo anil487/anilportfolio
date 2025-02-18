@@ -6,7 +6,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 const navigationItems = [
   { label: "Home", href: "/" },
-  { label: "About Me", href: "/about" },
+  { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ];
@@ -32,7 +32,7 @@ export default function Footer() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-gray-300 hover:text-white transition-colors duration-200"
+              className="text-gray-300 font-bold hover:text-blue-500 transition-colors duration-200 hover:underline"
             >
               {item.label}
             </Link>

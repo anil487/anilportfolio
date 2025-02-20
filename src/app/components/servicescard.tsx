@@ -27,20 +27,11 @@ export default function Services() {
       icon: <Code className="w-8 h-8" />,
     },
     {
-      title: "Full-Stack Web Apps",
-      description: "Developing scalable applications with Next.js, Express, and MongoDB.",
-      icon: <Server className="w-8 h-8" />,
-    },
-    {
       title: "API Development",
-      description: "Creating and integrating RESTful & GraphQL APIs for seamless data exchange.",
+      description: "Creating and integrating RESTful APIs for seamless data exchange.",
       icon: <Database className="w-8 h-8" />,
     },
-    {
-      title: "Performance & SEO",
-      description: "Optimizing websites for speed, accessibility, and search engine visibility.",
-      icon: <Zap className="w-8 h-8" />,
-    },
+    
     {
       title: "UI/UX & Web Design",
       description: "Crafting intuitive and engaging designs with Tailwind and Figma.",
@@ -51,16 +42,7 @@ export default function Services() {
       description: "Building analytics dashboards and automation tools like UTM builders.",
       icon: <BarChart3 className="w-8 h-8" />,
     },
-    {
-      title: "Domain & Hosting Setup",
-      description: "Helping businesses register domains and deploy web applications.",
-      icon: <Globe className="w-8 h-8" />,
-    },
-    {
-      title: "Scaling & Deployment",
-      description: "Deploying applications using Vercel, Netlify, and Docker-based hosting.",
-      icon: <Rocket className="w-8 h-8" />,
-    },
+   
   ]
 
   return (

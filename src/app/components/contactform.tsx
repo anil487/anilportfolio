@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import emailjs from "@emailjs/browser"
 import toast, { Toaster } from "react-hot-toast"
+import Container from "./container"
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -51,7 +52,8 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="p-8 bg-white rounded-lg shadow-lg text-center">
+    <Container>
+    <div className="p-8 bg-white  text-center mt-5 mb-24 lg:mb-32">
       <Toaster position="top-center" reverseOrder={false} />
       <h2 className="text-4xl font-bold text-gray-800 mb-2">Let&apos;s Connect</h2>
       <p className="text-gray-600 mb-4">Have a project in mind? Reach out to me!</p>
@@ -111,6 +113,7 @@ const ContactForm = () => {
         </Button>
       </form>
     </div>
+    </Container>
   )
 }
 

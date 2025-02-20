@@ -33,7 +33,10 @@ const AboutMe = () => {
             </span>
             . I focus on building meaningful, responsive, and scalable UIs.
             While frontend development is my main expertise, I am also in the
-            learning phase of backend development.
+            learning phase of backend development. I have learned and worked in
+            a real environment through assignments and projects during my time
+            at college, and I also worked as a front-end intern at Stable
+            Cluster, where I got the chance to reshape and enhance my skills.
           </p>
 
           <div className="space-y-4">

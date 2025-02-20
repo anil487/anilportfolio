@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Container from "./container";
 
 type Project = {
   id: number;
@@ -46,6 +47,7 @@ const ProjectShowcase = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
+    <Container>
     <div className="container mx-auto px-4 py-12 ">
       <h2 className="text-4xl font-bold text-center mb-8">My Projects</h2>
 
@@ -87,6 +89,7 @@ const ProjectShowcase = () => {
         ))}
       </div>
     </div>
+    </Container>
   );
 };
 

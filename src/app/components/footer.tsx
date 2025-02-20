@@ -54,7 +54,7 @@ export default function Footer() {
         <div className="text-center text-gray-400 text-sm mt-4">
           <p>
             &copy; {new Date().getFullYear()} Anil Kumar Mahato | Web Developer
-            All Rights Reserved, Inc.
+            All Rights Reserved.
           </p>
         </div>
       </div>

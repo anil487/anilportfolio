@@ -72,11 +72,11 @@ const ContactForm = () => {
         className="mt-6 flex flex-col items-center gap-4 justify-center w-full max-w-md mx-auto"
       >
         <div className="w-full">
-          <Label htmlFor="name">Name</Label>
+          <Label htmlFor="name"> Full Name</Label>
           <Input
             id="name"
             type="text"
-            name="Full Name"
+            name="name"
             placeholder="Enter Your Full Name"
             value={formData.name}
             onChange={handleChange}

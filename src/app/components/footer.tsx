@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaTwitterSquare } from "react-icons/fa";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { RiLinkedinFill } from "react-icons/ri";
+
 
 const navigationItems = [
   { label: "Home", href: "/" },
@@ -13,10 +12,9 @@ const navigationItems = [
 
 const socialLinks = [
   { icon: IoLogoGithub, href: "https://github.com/anil487", label: "Github" },
-  { icon: FaTwitterSquare, href: "#", label: "Twitter" },
-  { icon: AiOutlineInstagram, href: "#", label: "Instagram" },
+ 
   {
-    icon: FaLinkedin,
+    icon: RiLinkedinFill,
     href: "https://www.linkedin.com/in/anil-kr-mahato-029175229/",
     label: "LinkedIn",
   },
@@ -45,10 +43,10 @@ export default function Footer() {
             <Link
               key={social.label}
               href={social.href}
-              className="text-violet-500 hover:text-blue-500 transition-colors duration-200"
+              className="bg-violet-500 hover:bg-blue-500 text-white rounded-full p-2 transition-colors duration-300"
               aria-label={social.label}
             >
-              <social.icon className="h-5 w-5" />
+              <social.icon className="h-4 w-4" />
             </Link>
           ))}
         </div>

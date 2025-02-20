@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { RiLinkedinFill } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io5";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { CiSaveDown2 } from "react-icons/ci";
+
 
 const Hero = () => {
   return (
@@ -27,44 +28,42 @@ const Hero = () => {
             experiences.
           </p>
           <div className="mt-2">
-            <Button className="bg-orange-500 hover:bg-orange-700">
-              Hire me
-            </Button>
+            <Link href="/docs/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-orange-500 hover:bg-orange-700 transition-colors">
+                Download Resume
+                <CiSaveDown2 className="h-5 w-5 animate-bounce text-blue-600" />
+              </Button>
+            </Link>
           </div>
         </section>
 
         <div className="flex flex-col items-center md:items-end">
-          <div className="w-40 h-40 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
-            <Image
-              src="/images/anilmahato.png"
-              fill
-              className="object-cover"
-              alt="Anil Kumar Mahato"
-            />
-          </div>
-          <div className="flex justify-center gap-4 mt-4">
-            <Link
-              href="https://www.linkedin.com/in/anil-kr-mahato-029175229/"
-              className="text-violet-500 hover:text-blue-500"
-            >
-              <FaLinkedin className="w-6 h-6" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link
-              href="https://github.com/anil487"
-              className="text-violet-500 hover:text-blue-500"
-            >
-              <IoLogoGithub className="w-6 h-6" />
-              <span className="sr-only">GitHub</span>
-            </Link>
-            <Link href="#" className="text-violet-500 hover:text-blue-500">
-              <AiOutlineInstagram className="w-6 h-6" />
-              <span className="sr-only">Instagram</span>
-            </Link>
-            <Link href="#" className="text-violet-500 hover:text-blue-500">
-              <FaTwitterSquare className="w-6 h-6" />
-              <span className="sr-only">Twitter</span>
-            </Link>
+          <div className="relative">
+            <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden border-4 border-blue-500">
+              <Image
+                src="/images/anilmahato.png"
+                fill
+                sizes="(max-width: 768px) 192px, 256px"
+                className="object-cover"
+                alt="Anil Kumar Mahato"
+              />
+            </div>
+            <div className="flex justify-center gap-4 mt-4">
+              <Link
+                href="https://github.com/anil487"
+                className="bg-violet-500 hover:bg-blue-500 text-white rounded-full p-2 transition-colors duration-300"
+                aria-label="GitHub Profile"
+              >
+                <IoLogoGithub className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/anil-kr-mahato-029175229/"
+                className="bg-violet-500 hover:bg-blue-500 text-white rounded-full p-2 transition-colors duration-300"
+                aria-label="LinkedIn Profile"
+              >
+                <RiLinkedinFill className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

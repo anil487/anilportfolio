@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const skills = [
   { name: "Frontend Development", value: 90 },
-  { name: "Backend Development", value: 80 },
+  { name: "Backend Development", value: 40 },
   { name: "UI/UX & Responsive Design", value: 85 },
   { name: "Project Deployment & Optimization", value: 75 },
 ];
@@ -25,9 +25,13 @@ const AboutMe = () => {
         <h2 className="text-3xl font-bold text-blue-600 mb-2">About Me</h2>
         <p className="text-gray-700 mb-4">
           I’m <span className="font-semibold">Anil Kumar Mahato</span>, a
-          passionate web developer specializing in MERN stack and Next.js. I
-          love building scalable and efficient applications and have hands-on
-          experience integrating real-world solutions.
+          passionate web developer specializing in{" "}
+          <span className="font-semibold">
+            React.js, Next.js, TypeScript, JavaScript, and Tailwind CSS
+          </span>
+          . I focus on building meaningful, responsive, and scalable UIs. While
+          frontend development is my main expertise, I am also in the learning
+          phase of backend development.
         </p>
 
         <div className="space-y-3">

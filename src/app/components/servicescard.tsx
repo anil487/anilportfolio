@@ -1,5 +1,5 @@
 import type React from "react"
-import { Code, Globe, Zap, Palette, Database, Server, BarChart3, Rocket } from "lucide-react"
+import { Code,  Palette, Database,  BarChart3,  } from "lucide-react"
 
 interface ServiceCardProps {
   title: string

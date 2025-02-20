@@ -1,10 +1,10 @@
 import React from 'react'
 import ContactForm from '../components/contactform'
 
-const page = () => {
+const Contactpage = () => {
   return (
     <ContactForm/>
   )
 }
 
-export default page
+export default Contactpage

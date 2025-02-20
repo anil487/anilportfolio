@@ -53,7 +53,7 @@ const ContactForm = () => {
   return (
     <div className="p-8 bg-white rounded-lg shadow-lg text-center">
       <Toaster position="top-center" reverseOrder={false} />
-      <h2 className="text-3xl font-bold text-gray-800 mb-2">Let&apos;s Connect</h2>
+      <h2 className="text-4xl font-bold text-gray-800 mb-2">Let&apos;s Connect</h2>
       <p className="text-gray-600 mb-4">Have a project in mind? Reach out to me!</p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -72,7 +72,7 @@ const ContactForm = () => {
         className="mt-6 flex flex-col items-center gap-4 justify-center w-full max-w-md mx-auto"
       >
         <div className="w-full">
-          <Label htmlFor="name">Full Name</Label>
+          <Label className="text-base font-semibold" htmlFor="name">Full Name</Label>
           <Input
             id="name"
             type="text"
@@ -84,7 +84,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="w-full">
-          <Label htmlFor="email">Email</Label>
+          <Label className="text-base font-semibold"  htmlFor="email">Email</Label>
           <Input
             id="email"
             type="email"
@@ -96,7 +96,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="w-full">
-          <Label htmlFor="message">Message</Label>
+          <Label className="text-base font-semibold"  htmlFor="message">Message</Label>
           <Textarea
             id="message"
             name="message"
@@ -106,8 +106,8 @@ const ContactForm = () => {
             required
           />
         </div>
-        <Button type="submit" className="bg-orange-500 text-white px-6 py-2 rounded-lg" disabled={isSending}>
-          {isSending ? "Sending..." : "Contact Me"}
+        <Button type="submit" className="bg-orange-500 hover:bg-orange-700 text-white px-6 py-2 rounded-lg" disabled={isSending}>
+          {isSending ? "Sending..." : "Send Me"}
         </Button>
       </form>
     </div>

@@ -1,16 +1,17 @@
 "use client"
 
 import type React from "react"
-
 import { Mail, Phone } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { useState } from "react"
+import { useToast } from "@/hooks/use-toast"
 import emailjs from "@emailjs/browser"
 
 const ContactForm = () => {
+  const { toast } = useToast() 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,6 +32,7 @@ const ContactForm = () => {
     const templateParams = {
       to_name: "Anil Kumar Mahato",
       from_name: formData.name,
+      from_email: formData.email, 
       message: formData.message,
     }
 
@@ -39,13 +41,21 @@ const ContactForm = () => {
         "service_e3r39do", // Service ID
         "template_jcqq2f2", // Template ID
         templateParams,
-        "ocNMvI_rPilI6i8iN" // Your Public Key (replace with actual key)
+        "ocNMvI_rPilI6i8iN" // Your Public Key
       )
-      alert("Email sent successfully!")
+      toast({
+        title: "Email Sent Successfully!",
+        description: "I will get back to you soon.",
+      })
       setFormData({ name: "", email: "", message: "" })
     } catch (error) {
       console.error("Email sending failed:", error)
       setError("Failed to send email. Please try again.")
+      toast({
+        title: "Error",
+        description: "Failed to send email. Please try again.",
+        variant: "destructive",
+      })
     } finally {
       setIsSending(false)
     }

@@ -22,7 +22,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="sticky bottom-0 w-full bg-zinc-900 text-white py-8">
+    <footer className="sticky bottom-0 w-full bg-zinc-900 text-white py-8 z-20">
       <div className="container mx-auto px-4 flex flex-col items-center gap-8">
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4">

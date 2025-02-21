@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Container from "../components/container";
+import { TimelineDemo } from "../components/timeline-demo";
 
 const skills = [
   { name: "Frontend Development", value: 90 },
@@ -13,7 +14,7 @@ const skills = [
 const AboutMe = () => {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row items-center gap-10 p-6 md:p-10 bg-white shadow-lg rounded-lg mt-5 mb-24">
+      <div className="flex flex-col md:flex-row items-center gap-10 p-6 md:p-10 bg-white shadow-lg rounded-lg mt-5 ">
         <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative rounded-full overflow-hidden border-4 border-blue-500">
           <Image
             src="/images/anilmahato.png"
@@ -56,7 +57,12 @@ const AboutMe = () => {
             ))}
           </div>
         </div>
+        
       </div>
+      <div>
+      <TimelineDemo />
+      </div>
+      
     </Container>
   );
 };

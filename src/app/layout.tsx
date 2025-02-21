@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   creator: "Anil Kumar Mahato",
   icons: {
     icon: "/favicon.ico",
+    
   },
 };
 
